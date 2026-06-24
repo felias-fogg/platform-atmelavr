@@ -20,7 +20,7 @@ class AtmelavrPlatform(PlatformBase):
 
     toolchain_atmelavr = {
         # Windows
-        "windows_amd64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-x86_64-mingw32-windows.zip"
+        "windows_amd64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-x86_64-mingw32-windows.zip",
         # Linux
         "linux_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-x86_64-linux-gnu.tar.bz2",
         # Mac (Intel and ARM are separate)
