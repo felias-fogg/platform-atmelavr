@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-atmelavr.git"
+    "url": "https://github.com/felias-fogg/platform-atmelavr.git"
   },
   "version": "5.2.0",
   "frameworks": {
@@ -45,7 +45,7 @@
     },
     "framework-arduino-avr-bean": {
       "type": "framework",
-      "optional": true,
+      "optional": true, 
       "owner": "platformio",
       "version": "~2.0.3"
     },
@@ -119,8 +119,7 @@
       "type": "uploader",
       "optional": true,
       "owner": "platformio",
-      "version": "~1.60300.0",
-      "optionalVersions": ["~1.80100.0"]
+      "version": "~1.80100.0",
     },
     "tool-micronucleus": {
       "type": "uploader",
@@ -133,6 +132,12 @@
       "optional": true,
       "owner": "platformio",
       "version": "~1.10800.0"
+    },
+    "tool-pyavrocd": {
+      "type": "debugger",
+      "optional": true,
+      "owner": "felias-fogg",
+      "version": "https://github.com/felias-fogg/PyAvrOCD/archive/refs/heads/dummy.zip"
     }
   }
 }

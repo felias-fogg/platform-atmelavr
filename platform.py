@@ -13,9 +13,25 @@
 # limitations under the License.
 
 from platformio.public import PlatformBase
-
+from platformio import util
+import sys
 
 class AtmelavrPlatform(PlatformBase):
+
+    toolchain_atmelavr = {
+        # Windows
+        "windows_amd64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-x86_64-mingw32-windows.zip"
+        # Linux
+        "linux_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-x86_64-linux-gnu.tar.bz2",
+        # Mac (Intel and ARM are separate)
+        "darwin_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-x86_64-apple-darwin.tar.bz2",
+        "darwin_arm64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0-01/avr-gcc-15.1.0-microchip4.0.0-01-arm64-apple-darwin.tar.bz2"
+    }
+
+    tool_pyavrocd = {
+        # Mac (Intel and ARM are separate)
+        "darwin_arm64": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.3a1/avrocd-tools-1.5.3a1-arm64-apple-darwin.tar.gz"
+    }
 
     def configure_default_packages(self, variables, targets):
         if not variables.get("board"):
@@ -24,6 +40,14 @@ class AtmelavrPlatform(PlatformBase):
         build_core = variables.get(
             "board_build.core", self.board_config(variables.get("board")).get(
                 "build.core", "arduino"))
+
+        sys_type = util.get_systype()
+        toolchain_pkg = "toolchain-atmelavr"
+        if toolchain_pkg in self.packages:
+            self.packages[toolchain_pkg]["version"] = AtmelavrPlatform.toolchain_atmelavr[sys_type]
+        pyavrocd_pkg = "tool-pyavrocd"
+        if pyavrocd_pkg in self.packages:
+            self.packages[pyavrocd_pkg]["version"] = AtmelavrPlatform.tool_pyavrocd[sys_type]        
 
         if "arduino" in variables.get(
                 "pioframework", []) and build_core != "arduino":
