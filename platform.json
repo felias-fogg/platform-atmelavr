@@ -29,7 +29,7 @@
     "toolchain-atmelavr": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~1.70300.0"
+      "version": "https://github.com/felias-fogg/avr-gcc-15/archive/refs/heads/dummy.zip"
     },
     "framework-arduino-avr": {
       "type": "framework",
