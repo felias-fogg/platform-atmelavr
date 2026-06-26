@@ -35,7 +35,7 @@
       "type": "debugger",
       "optional": false,
       "owner": "felias-fogg",
-      "version": "https://github.com/felias-fogg/pyavrocd/archive/refs/heads/dummy.zip"
+      "version": "https://github.com/felias-fogg/PyAvrOCD/archive/refs/heads/dummy.zip"
     },
     "framework-arduino-avr": {
       "type": "framework",
