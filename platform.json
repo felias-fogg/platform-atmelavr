@@ -31,6 +31,12 @@
       "owner": "platformio",
       "version": "https://github.com/felias-fogg/avr-gcc-15/archive/refs/heads/dummy.zip"
     },
+    "tool-pyavrocd": {
+      "type": "debugger",
+      "optional": false,
+      "owner": "felias-fogg",
+      "version": "https://github.com/felias-fogg/pyavrocd/archive/refs/heads/dummy.zip"
+    },
     "framework-arduino-avr": {
       "type": "framework",
       "optional": true,
@@ -133,12 +139,6 @@
       "optional": true,
       "owner": "platformio",
       "version": "~1.10800.0"
-    },
-    "tool-pyavrocd": {
-      "type": "debugger",
-      "optional": false,
-      "owner": "felias-fogg",
-      "version": "https://github.com/felias-fogg/pyavrocd/archive/refs/heads/dummy.zip"
     }
   }
 }
