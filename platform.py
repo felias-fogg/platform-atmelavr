@@ -30,7 +30,7 @@ class AtmelavrPlatform(PlatformBase):
 
     tool_pyavrocd = {
         # Mac (Intel and ARM are separate)
-        "darwin_arm64": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.3a1/avrocd-tools-1.5.3a1-arm64-apple-darwin.tar.gz"
+        "darwin_arm64": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.3/avrocd-tools-1.5.3-arm64-apple-darwin.tar.gz"
     }
 
     def configure_default_packages(self, variables, targets):
@@ -46,8 +46,8 @@ class AtmelavrPlatform(PlatformBase):
         if toolchain_pkg in self.packages:
             self.packages[toolchain_pkg]["version"] = AtmelavrPlatform.toolchain_atmelavr[sys_type]
         pyavrocd_pkg = "tool-pyavrocd"
-        #if pyavrocd_pkg in self.packages:
-        #    self.packages[pyavrocd_pkg]["version"] = AtmelavrPlatform.tool_pyavrocd[sys_type]        
+        if pyavrocd_pkg in self.packages:
+            self.packages[pyavrocd_pkg]["version"] = AtmelavrPlatform.tool_pyavrocd[sys_type]        
 
         if "arduino" in variables.get(
                 "pioframework", []) and build_core != "arduino":
