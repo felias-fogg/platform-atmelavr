@@ -136,7 +136,7 @@
     },
     "tool-pyavrocd": {
       "type": "debugger",
-      "optional": true,
+      "optional": false,
       "owner": "felias-fogg",
       "version": "https://github.com/felias-fogg/pyavrocd/archive/refs/heads/dummy.zip"
     }
