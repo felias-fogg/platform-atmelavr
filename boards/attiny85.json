@@ -10,6 +10,7 @@
   "debug": {
     "simavr_target": "attiny85"
   },
+  "svd_path": "attiny85.svd",
   "frameworks": [
     "arduino"
   ],
