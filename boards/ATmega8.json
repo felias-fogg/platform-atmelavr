@@ -11,7 +11,8 @@
     "uart0_pins": "uart0_rxd0_txd1"
   },
   "debug": {
-    "simavr_target": "atmega8"
+    "simavr_target": "atmega8",
+    "pyavrocd": "nodebug"
   },
   "frameworks": [
     "arduino"

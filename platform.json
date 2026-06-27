@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/platformio/platform-atmelavr.git"
   },
-  "version": "5.3.0",
+  "version": "5.3.1",
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-avr",
@@ -33,7 +33,7 @@
     },
     "tool-pyavrocd": {
       "type": "debugger",
-      "optional": false,
+      "optional": true,
       "owner": "felias-fogg",
       "version": "https://github.com/felias-fogg/pyavrocd/archive/refs/heads/dummy.zip"
     },
