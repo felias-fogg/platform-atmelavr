@@ -161,6 +161,7 @@ class AtmelavrPlatform(PlatformBase):
                 "default": False
             }
         if not debug.get("pyavrocd", "") == "nodebug":
+            debug_port_number = "50001"
             debug["tools"]["pyavrocd"] = {
                 "init_cmds": [
                     "define pio_reset_halt_target",
@@ -175,18 +176,18 @@ class AtmelavrPlatform(PlatformBase):
                     "$INIT_BREAK",
                     "$LOAD_CMDS"
                 ],
-                "port": ":50001",
+                "port": ":" + debug_port_number,
                 "server": {
                     "package": "tool-pyavrocd",
                     "arguments": [
+                        "-p", debug_port_number,
                         "-m", "all",
                         "-d", build.get("mcu", ""),
                         "-F", build.get("f_cpu", ""),
                         "-P", "2000"
                     ],
                     "executable": "pyavrocd"
-                },
-                "svd_path": "${platformio.packages_dir}/tool-pyavrocd/pyavrocd-util/svd/${this.board_build.mcu}.svd"
+                }
             }
       
         board.manifest["debug"] = debug
