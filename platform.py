@@ -30,7 +30,7 @@ class AtmelavrPlatform(PlatformBase):
 
     tool_pyavrocd = {
         # Mac (Intel and ARM are separate)
-        "darwin_arm64": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.3/avrocd-tools-1.5.3-arm64-apple-darwin.tar.gz"
+        "darwin_arm64": "https://github.com/felias-fogg/pyavrocd/releases/download/v1.5.3/avrocd-tools-1.5.3-arm64-apple-darwin.tar.gz"
     }
 
     def configure_default_packages(self, variables, targets):
