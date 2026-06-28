@@ -6,17 +6,19 @@
     "mcu": "atmega88",
     "variant": "standard"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B5",
     "uart0_pins": "uart0_rxd0_txd1"
   },
   "debug": {
-    "simavr_target": "atmega88"
+    "simavr_target": "atmega88",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega88.svd",
+    "pyavrocd": "nodebug"
   },
   "frameworks": [
     "arduino"
   ],
-  "name": "ATmega88/A",
+  "name": "ATmega88",
   "upload": {
     "maximum_ram_size": 1024,
     "maximum_size": 8192,

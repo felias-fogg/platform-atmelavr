@@ -7,7 +7,8 @@
     "variant": "sanguino"
   },
   "debug": {
-    "simavr_target": "atmega644"
+    "simavr_target": "atmega644",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega644.svd"
   },
   "frameworks": [
     "arduino"

@@ -6,13 +6,14 @@
     "mcu": "atmega1281",
     "variant": "64-pin-avr"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B5",
     "uart0_pins": "uart0_rxe0_txe1",
     "uart1_pins": "uart1_rxd2_txd3"
   },
   "debug": {
-    "simavr_target": "atmega1281"
+    "simavr_target": "atmega1281",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega1281.svd"
   },
   "frameworks": [
     "arduino"

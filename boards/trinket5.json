@@ -7,7 +7,8 @@
     "variant": "trinket_tiny8"
   },
   "debug": {
-    "simavr_target": "attiny85"
+    "simavr_target": "attiny85",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny85.svd"
   },
   "frameworks": [
     "arduino"

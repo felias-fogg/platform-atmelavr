@@ -6,9 +6,12 @@
     "mcu": "atmega48pb",
     "variant": "pb-variant"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B5",
     "uart0_pins": "uart0_rxd0_txd1"
+  },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega48pb.svd"
   },
   "frameworks": [
     "arduino"

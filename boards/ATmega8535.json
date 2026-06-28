@@ -6,13 +6,14 @@
     "mcu": "atmega8535",
     "variant": "standard"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B0",
     "uart0_pins": "uart0_rxd0_txd1"
   },
   "debug": {
     "pyavrocd": "nodebug"
-  },  "frameworks": [
+  },
+  "frameworks": [
     "arduino"
   ],
   "name": "ATmega8535",

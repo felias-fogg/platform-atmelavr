@@ -6,12 +6,13 @@
     "mcu": "atmega48p",
     "variant": "standard"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B5",
     "uart0_pins": "uart0_rxd0_txd1"
   },
   "debug": {
-    "simavr_target": "atmega48p"
+    "simavr_target": "atmega48p",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega48p.svd"
   },
   "frameworks": [
     "arduino"

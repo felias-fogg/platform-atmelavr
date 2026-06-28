@@ -7,7 +7,8 @@
     "variant": "sparkfun_rf128"
   },
   "debug": {
-    "simavr_target": "atmega128rfa1"
+    "simavr_target": "atmega128rfa1",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega128rfa1.svd"
   },
   "frameworks": [
     "arduino"

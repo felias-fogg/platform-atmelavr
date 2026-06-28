@@ -24,6 +24,9 @@
     "mcu": "atmega328pb",
     "variant": "R4"
   },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328pb.svd"
+  },
   "frameworks": [
     "arduino"
   ],

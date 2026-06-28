@@ -1,7 +1,7 @@
 {
   "build": {
     "core": "MicroCore",
-    "extra_flags": "-DARDUINO_AVR_ATTINY13",
+    "extra_flags": "-DARDUINO_AVR_ATTINY13A",
     "f_cpu": "9600000L",
     "mcu": "attiny13a",
     "variant": "attiny13a"
@@ -11,7 +11,8 @@
     "uart": "no_bootloader"
   },
   "debug": {
-    "simavr_target": "attiny13a"
+    "simavr_target": "attiny13a",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny13a.svd"
   },
   "frameworks": [
     "arduino"

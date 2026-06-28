@@ -15,7 +15,8 @@
     "unlock_bits": "0x3F"
   },
   "debug": {
-    "simavr_target": "atmega168"
+    "simavr_target": "atmega168",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega168.svd"
   },
   "frameworks": [
     "arduino"

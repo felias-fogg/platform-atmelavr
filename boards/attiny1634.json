@@ -1,9 +1,20 @@
 {
   "build": {
-    "core": "tinymodern",
-    "extra_flags": "-DARDUINO_AVR_ATTINY1634 -DLOWERCAL=9",
+    "core": "TinyCore",
+    "extra_flags": "-DARDUINO_AVR_ATTINY1634 -DLOWERCAL=6",
     "f_cpu": "8000000L",
-    "mcu": "attiny1634"
+    "mcu": "attiny1634",
+    "variant": "tiny1634_cw"
+  },
+  "hardware": {
+    "oscillator": "internal",
+    "uart": "uart0"
+  },
+  "bootloader": {
+    "led_pin": "noled"
+  },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny1634.svd"
   },
   "frameworks": [
     "arduino"

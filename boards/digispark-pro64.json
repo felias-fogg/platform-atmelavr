@@ -6,6 +6,9 @@
     "mcu": "attiny167",
     "variant": "pro"
   },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny167.svd"
+  },
   "frameworks": [
     "arduino"
   ],

@@ -7,7 +7,8 @@
     "variant": "nibobee"
   },
   "debug": {
-    "simavr_target": "atmega16"
+    "simavr_target": "atmega16",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega16.svd"
   },
   "frameworks": [
     "arduino"

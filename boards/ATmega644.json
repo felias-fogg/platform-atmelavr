@@ -1,9 +1,9 @@
 {
   "build": {
     "core": "MightyCore",
-    "extra_flags": "-DARDUINO_AVR_ATmega1284",
+    "extra_flags": "-DARDUINO_AVR_ATmega644",
     "f_cpu": "16000000L",
-    "mcu": "atmega1284",
+    "mcu": "atmega644",
     "variant": "standard"
   },
   "bootloader": {
@@ -12,20 +12,19 @@
     "uart1_pins": "uart1_rxd2_txd3"
   },
   "debug": {
-    "simavr_target": "atmega1284",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega1284.svd"
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega644.svd"
   },
   "frameworks": [
     "arduino"
   ],
-  "name": "ATmega1284",
+  "name": "ATmega644",
   "upload": {
-    "maximum_ram_size": 16384,
-    "maximum_size": 131072,
+    "maximum_ram_size": 4096,
+    "maximum_size": 65536,
     "protocol": "urclock",
     "require_upload_port": true,
     "speed": 115200
   },
-  "url": "https://www.microchip.com/wwwproducts/en/ATmega1284",
+  "url": "https://www.microchip.com/wwwproducts/en/ATmega644",
   "vendor": "Microchip"
 }

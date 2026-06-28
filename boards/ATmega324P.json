@@ -1,18 +1,19 @@
 {
   "build": {
     "core": "MightyCore",
-    "extra_flags": "-DARDUINO_AVR_ATmega324",
+    "extra_flags": "-DARDUINO_AVR_ATmega324P",
     "f_cpu": "16000000L",
     "mcu": "atmega324p",
     "variant": "standard"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B0",
     "uart0_pins": "uart0_rxd0_txd1",
     "uart1_pins": "uart1_rxd2_txd3"
   },
   "debug": {
-    "simavr_target": "atmega324p"
+    "simavr_target": "atmega324p",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega324p.svd"
   },
   "frameworks": [
     "arduino"

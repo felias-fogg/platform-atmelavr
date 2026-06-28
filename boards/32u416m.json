@@ -13,7 +13,8 @@
     "variant": "microduino_32u4"
   },
   "debug": {
-    "simavr_target": "atmega32u4"
+    "simavr_target": "atmega32u4",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega32u4.svd"
   },
   "frameworks": [
     "arduino"

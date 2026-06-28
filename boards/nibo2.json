@@ -7,7 +7,8 @@
     "variant": "nibo2"
   },
   "debug": {
-    "simavr_target": "atmega128"
+    "simavr_target": "atmega128",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega128.svd"
   },
   "frameworks": [
     "arduino"

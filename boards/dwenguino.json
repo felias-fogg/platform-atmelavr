@@ -18,12 +18,15 @@
     "variant": "dwenguino"
   },
   "bootloader": {
-    "efuse": "0xFB", 
-    "file": "dwenguino/BootloaderDwenguino-Welcome.hex", 
-    "hfuse": "0xD2", 
-    "lock_bits": "0x2F", 
-    "lfuse": "0xFF", 
+    "efuse": "0xFB",
+    "file": "dwenguino/BootloaderDwenguino-Welcome.hex",
+    "hfuse": "0xD2",
+    "lock_bits": "0x2F",
+    "lfuse": "0xFF",
     "unlock_bits": "0x3F"
+  },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90usb646.svd"
   },
   "frameworks": [
     "arduino"

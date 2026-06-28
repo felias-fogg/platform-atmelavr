@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/platformio/platform-atmelavr.git"
   },
-  "version": "5.3.1",
+  "version": "5.3.2",
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-avr",
@@ -89,7 +89,7 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~3.1.0"
+      "version": "https://MCUdude.github.io/MiniCore/MiniCore-3.1.2.tar.bz2"
     },
     "framework-arduino-avr-majorcore": {
       "type": "framework",
@@ -101,7 +101,13 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.5.0"
+      "version": "~2.5.2"
+    },
+    "framework-arduino-avr-tinycore": {
+      "type": "framework",
+      "optional": true,
+      "owner": "mcudude",
+      "version": "https://MCUdude.github.io/TinyCore/TinyCore-0.8.0.tar.bz2"
     },
     "framework-arduino-avr-nicai": {
       "type": "framework",
@@ -125,8 +131,7 @@
       "type": "uploader",
       "optional": true,
       "owner": "platformio",
-      "version": "~1.60300.0",
-      "optionalVersions": ["~1.80100.0"]
+      "version": "~1.80100.0"
     },
     "tool-micronucleus": {
       "type": "uploader",

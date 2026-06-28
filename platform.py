@@ -55,17 +55,6 @@ class AtmelavrPlatform(PlatformBase):
             framework_package = "framework-arduino-avr-%s" % build_core.lower()
             if build_core in ("dtiny", "pro"):
                 framework_package = "framework-arduino-avr-digistump"
-            elif build_core in ("tiny", "tinymodern"):
-                framework_package = "framework-arduino-avr-attiny"
-
-            if build_core in (
-                "MiniCore",
-                "MegaCore",
-                "MightyCore",
-                "MajorCore",
-                "MicroCore",
-            ):
-                self.packages["tool-avrdude"]["version"] = "~1.80100.0"
 
             self.frameworks["arduino"]["package"] = framework_package
             self.packages[framework_package]["optional"] = False

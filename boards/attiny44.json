@@ -1,13 +1,22 @@
 {
   "build": {
-    "core": "tiny",
+    "core": "TinyCore",
     "extra_flags": "-DARDUINO_AVR_ATTINYX4",
     "f_cpu": "8000000L",
     "mcu": "attiny44",
-    "variant": "tinyX4"
+    "variant": "tinyx4_cw"
+  },
+  "hardware": {
+    "oscillator": "internal"
+  },
+  "bootloader": {
+    "led_pin": "noled",
+    "uart_pins": "swio_rxa2_txa1",
+    "speed": 38400
   },
   "debug": {
-    "simavr_target": "attiny44"
+    "simavr_target": "attiny44",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny44.svd"
   },
   "frameworks": [
     "arduino"

@@ -1,9 +1,20 @@
 {
   "build": {
-    "core": "tinymodern",
-    "extra_flags": "-DARDUINO_AVR_AVR_ATTINY828 -DLOWERCAL=9",
+    "core": "TinyCore",
+    "extra_flags": "-DARDUINO_AVR_AVR_ATTINY828 -DLOWERCAL=6",
     "f_cpu": "8000000L",
-    "mcu": "attiny828"
+    "mcu": "attiny828",
+    "variant": "tiny828"
+  },
+  "hardware": {
+    "oscillator": "internal",
+    "uart": "uart0"
+  },
+  "bootloader": {
+    "led_pin": "noled"
+  },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny828.svd"
   },
   "frameworks": [
     "arduino"

@@ -1,9 +1,20 @@
 {
   "build": {
-    "core": "tinymodern",
-    "extra_flags": "-DARDUINO_AVR_ATTINYX41 -DLOWERCAL -DWIRE_MASTER_ONLY -DNEW_PINOUT",
+    "core": "TinyCore",
+    "extra_flags": "-DARDUINO_AVR_ATTINYX41 -DLOWERCAL=6 -DWIRE_MASTER_ONLY",
     "f_cpu": "8000000L",
-    "mcu": "attiny441"
+    "mcu": "attiny441",
+    "variant": "tinyx41_cw"
+  },
+  "hardware": {
+    "oscillator": "internal",
+    "uart": "uart0"
+  },
+  "bootloader": {
+    "led_pin": "noled"
+  },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny441.svd"
   },
   "frameworks": [
     "arduino"

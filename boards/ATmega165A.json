@@ -1,19 +1,22 @@
 {
   "build": {
     "core": "MegaCore",
-    "extra_flags": "-DARDUINO_AVR_ATmega165",
+    "extra_flags": "-DARDUINO_AVR_ATmega165A",
     "f_cpu": "16000000L",
     "mcu": "atmega165a",
     "variant": "64-pin-avr"
   },
-  "bootloader":{
+  "bootloader": {
     "led_pin": "B5",
     "uart0_pins": "uart0_rxe0_txe1"
+  },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega165a.svd"
   },
   "frameworks": [
     "arduino"
   ],
-  "name": "ATmega165/A",
+  "name": "ATmega165A",
   "upload": {
     "maximum_ram_size": 1024,
     "maximum_size": 16384,

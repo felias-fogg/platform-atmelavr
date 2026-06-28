@@ -6,6 +6,9 @@
     "mcu": "atmega256rfr2",
     "variant": "pinoccio"
   },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega256rfr2.svd"
+  },
   "frameworks": [
     "arduino"
   ],

@@ -5,6 +5,9 @@
     "f_cpu": "16000000L",
     "mcu": "at90pwm216"
   },
+  "debug": {
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90pwm216.svd"
+  },
   "frameworks": [],
   "name": "Atmel AT90PWM216",
   "upload": {

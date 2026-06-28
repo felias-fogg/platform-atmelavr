@@ -7,7 +7,8 @@
     "variant": "eightanaloginputs"
   },
   "debug": {
-    "simavr_target": "atmega328p"
+    "simavr_target": "atmega328p",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328p.svd"
   },
   "frameworks": [
     "arduino"
