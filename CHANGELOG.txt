@@ -17,3 +17,4 @@
 
 5.3.4
  - Fixed Problem in dw_disbale target
+ - Fixed specification of pyavrocd version spec

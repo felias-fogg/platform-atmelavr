@@ -26,33 +26,24 @@ class AtmelavrPlatform(PlatformBase):
 
     toolchain_atmelavr = {
         # Windows
-        "windows_amd64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
-          AtmelavrPlatform.tc_version + "-x86_64-mingw32-windows.zip",
+        "windows_amd64": tc_prefix + tc_version + "/" + tc_version + "-x86_64-mingw32-windows.zip",
         # Linux Intel
-        "linux_x86_64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
-          AtmelavrPlatform.tc_version + "-x86_64-linux-gnu.tar.gz",
+        "linux_x86_64": tc_prefix + tc_version + "/" + tc_version + "-x86_64-linux-gnu.tar.gz",
         # Mac (Intel and ARM are separate)
-        "darwin_x86_64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
-          AtmelavrPlatform.tc_version + "-x86_64-apple-darwin.tar.gz",
-        "darwin_arm64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
-          AtmelavrPlatform.tc_version + "-arm64-apple-darwin.tar.gz"
+        "darwin_x86_64": tc_prefix + tc_version + "/" + tc_version + "-x86_64-apple-darwin.tar.gz",
+        "darwin_arm64": tc_prefix + tc_version + "/" + tc_version + "-arm64-apple-darwin.tar.gz"
     }
 
     tool_pyavrocd = {
         # Windows
-        "windows_amd64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
-          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-x86_64-mingw32.tar.gz"
+        "windows_amd64": pya_prefix + pya_version + pya_infix + pya_version + "-x86_64-mingw32.tar.gz",
         # Linux Intel
-        "linux_x86_64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
-          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-x86_64-linux-gnu.tar.gz"
+        "linux_x86_64": pya_prefix + pya_version + pya_infix + pya_version + "-x86_64-linux-gnu.tar.gz",
         # Linux Arm
-        "linux_arm64":  AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
-          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-aarch64-linux-gnu.tar.gz"
+        "linux_arm64":  pya_prefix + pya_version + pya_infix + pya_version + "-aarch64-linux-gnu.tar.gz",
         # Mac (Intel and ARM are separate)
-        "darwin_x86_64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
-          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-x86_64-apple-darwin.tar.gz"
-        "darwin_arm64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
-          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-arm64-apple-darwin.tar.gz"
+        "darwin_x86_64": pya_prefix + pya_version + pya_infix + pya_version + "-x86_64-apple-darwin.tar.gz",
+        "darwin_arm64": pya_prefix + pya_version + pya_infix + pya_version + "-arm64-apple-darwin.tar.gz"
     }
 
     def configure_default_packages(self, variables, targets):
