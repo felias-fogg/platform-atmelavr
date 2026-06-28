@@ -277,6 +277,20 @@ if "bootloader" in COMMAND_LINE_TARGETS:
 env.AddPlatformTarget("bootloader", None, bootloader_actions, "Burn Bootloader")
 
 #
+# Target: Disable debugWIRE
+#
+if env.PioPlatform().get_package_dir("tool-pyavrocd"):
+    pyavrocd_path = join(env.PioPlatform().get_package_dir("tool-pyavrocd"), "pyavrocd")
+    pyavrocd_dw_disable = pyavrocd_path + " -m all -d ${BOARD_MCU} --debugwire disable"
+else:
+    pyavrocd_dw_disable = "echo 'pyavrocd not yet installed'; exit 1"
+pyavrocd_path = join(env.PioPlatform().get_package_dir("tool-pyavrocd"), "pyavrocd")
+pyavrocd_dw_disable = pyavrocd_path + " -m all -d ${BOARD_MCU} --debugwire disable"
+env.AddPlatformTarget("dwoff", None,
+env.VerboseAction(pyavrocd_dw_disable, "Disabling debugWIRE"),
+"Disable debugWIRE")
+
+#
 # Setup default targets
 #
 

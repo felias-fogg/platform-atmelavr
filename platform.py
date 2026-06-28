@@ -18,19 +18,41 @@ import sys
 
 class AtmelavrPlatform(PlatformBase):
 
+    tc_version = "avr-gcc-15.1.0-microchip4.0.0.52-03"
+    tc_prefix = "https://github.com/felias-fogg/avr-gcc-15/releases/download/"
+    pya_version = "1.5.3"
+    pya_prefix = "https://github.com/felias-fogg/pyavrocd/releases/download/v"
+    pya_infix = "/avrocd-tools-"
+
     toolchain_atmelavr = {
         # Windows
-        "windows_amd64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-x86_64-mingw32-windows.zip",
-        # Linux
-        "linux_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-x86_64-linux-gnu.tar.gz",
+        "windows_amd64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
+          AtmelavrPlatform.tc_version + "-x86_64-mingw32-windows.zip",
+        # Linux Intel
+        "linux_x86_64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
+          AtmelavrPlatform.tc_version + "-x86_64-linux-gnu.tar.gz",
         # Mac (Intel and ARM are separate)
-        "darwin_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-x86_64-apple-darwin.tar.gz",
-        "darwin_arm64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-arm64-apple-darwin.tar.gz"
+        "darwin_x86_64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
+          AtmelavrPlatform.tc_version + "-x86_64-apple-darwin.tar.gz",
+        "darwin_arm64": AtmelavrPlatform.tc_prefix + AtmelavrPlatform.tc_version + "/" + \
+          AtmelavrPlatform.tc_version + "-arm64-apple-darwin.tar.gz"
     }
 
     tool_pyavrocd = {
+        # Windows
+        "windows_amd64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
+          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-x86_64-mingw32.tar.gz"
+        # Linux Intel
+        "linux_x86_64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
+          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-x86_64-linux-gnu.tar.gz"
+        # Linux Arm
+        "linux_arm64":  AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
+          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-aarch64-linux-gnu.tar.gz"
         # Mac (Intel and ARM are separate)
-        "darwin_arm64": "https://github.com/felias-fogg/pyavrocd/releases/download/v1.5.3/avrocd-tools-1.5.3-arm64-apple-darwin.tar.gz"
+        "darwin_x86_64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
+          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-x86_64-apple-darwin.tar.gz"
+        "darwin_arm64": AtmelavrPlatform.pya_prefix + AtmelavrPlatform.pya_version + \
+          AtmelavrPlatform.pya_infix + AtmelavrPlatform.pya_version + "-arm64-apple-darwin.tar.gz"
     }
 
     def configure_default_packages(self, variables, targets):

@@ -1,0 +1,16 @@
+5.3.2
+ - Added GCC-15.1.0 toolchain as an internal tool
+ - Made avrdude 8.1 the standard version
+ - ATTinyCore removed
+ - TinyCore 0.8.0 added
+ - All board manifests have been extended by a SVD file located in pyavrocd-util/svd
+ - All boards w/o a debug interface have been marked with 'pyavrocd: nodebug'
+ - Added PyAvrOCD 1.5.3 as an internal tool
+ - Added pyavrocd as a potential debug tool
+ - Set up the configuration for this tool
+ - Fixed the size target in the Platform targets
+
+5.3.3
+ - Added T2313a and T26 in boards
+ - Added a dummy folder misc/svd with a dummy file so that the SVD files can be accessed
+ - Added a 'Disable debugWIRE' target
