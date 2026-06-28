@@ -20,12 +20,12 @@ class AtmelavrPlatform(PlatformBase):
 
     toolchain_atmelavr = {
         # Windows
-        "windows_amd64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0-02-x86_64-mingw32-windows.zip",
+        "windows_amd64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-x86_64-mingw32-windows.zip",
         # Linux
-        "linux_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0-02-x86_64-linux-gnu.tar.gz",
+        "linux_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-x86_64-linux-gnu.tar.gz",
         # Mac (Intel and ARM are separate)
-        "darwin_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0-02-x86_64-apple-darwin.tar.gz",
-        "darwin_arm64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0-02-arm64-apple-darwin.tar.gz"
+        "darwin_x86_64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-x86_64-apple-darwin.tar.gz",
+        "darwin_arm64": "https://github.com/felias-fogg/avr-gcc-15/releases/download/avr-gcc-15.1.0-microchip4.0.0.52-03/avr-gcc-15.1.0-microchip4.0.0.52-03-arm64-apple-darwin.tar.gz"
     }
 
     tool_pyavrocd = {
