@@ -14,3 +14,6 @@
  - Added T2313a and T26 in boards
  - Added a dummy folder misc/svd with a dummy file so that the SVD files can be accessed
  - Added a 'Disable debugWIRE' target
+
+5.3.4
+ - Fixed Problem in dw_disbale target
