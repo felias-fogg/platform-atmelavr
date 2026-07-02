@@ -1,4 +1,4 @@
-# Atmel AVR: development platform for [PlatformIO](https://platformio.org)
+# Atmel AVR: development platform for [PlatformIO](https://platformio.org) (Debug enabled)
 
 [![Build Status](https://github.com/platformio/platform-atmelavr/workflows/Examples/badge.svg)](https://github.com/platformio/platform-atmelavr/actions)
 
@@ -7,25 +7,16 @@ Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power 
 * [Home](https://registry.platformio.org/platforms/platformio/atmelavr) (home page in the PlatformIO Registry)
 * [Documentation](https://docs.platformio.org/page/platforms/atmelavr.html) (advanced usage, packages, boards, frameworks, etc.)
 
+*This is a fork of the original platform, unlocking the power of the Microchip debuggers. Any EDBG-based debugger can be used to debug classic AVR chips*. *Full documentation is available here*: [pyavrocd.io](https://pyavrocd.io).
+
 # Usage
 
 1. [Install PlatformIO](https://platformio.org)
 2. Create PlatformIO project and configure a platform option in [platformio.ini](https://docs.platformio.org/page/projectconf.html) file:
 
-## Stable version
-
 ```ini
-[env:stable]
-platform = atmelavr
-board = ...
-...
-```
-
-## Development version
-
-```ini
-[env:development]
-platform = https://github.com/platformio/platform-atmelavr.git
+[env:chip]
+platform = https://github.com/felias-fogg/platform-atmelavr.git
 board = ...
 ...
 ```

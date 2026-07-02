@@ -1,18 +1,18 @@
 {
   "build": {
     "core": "arduino",
-    "extra_flags": "-DARDUINO_AVR_XMINI_328P",
+    "extra_flags": "-DARDUINO_AVR_XMINI_168PB",
     "f_cpu": "16000000L",
-    "mcu": "atmega328p",
-    "variant": "standard",
+    "mcu": "atmega168pb",
+    "variant": "pb-variant",
     "hwids": [ "0x03eb",
                "0x2145"
              ]
   },
   "debug": {
-    "simavr_target": "atmega328p",
-    "pyavrocd_target": "atmega328p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328p.svd",
+    "simavr_target": "atmega168pb",
+    "pyavrocd_target": "atmega168pb",
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega168pb.svd",
     "tools": {
       "pyavrocd": {
         "init_cmds": [
@@ -38,7 +38,7 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "ATmega328p Xplained Mini",
+  "name": "ATmega168PB Xplained Mini",
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 32768,
@@ -46,6 +46,6 @@
     "require_upload_port": false,
     "flags": "-e"
   },
-  "url": "https://www.microchip.com/en-us/development-tool/ATMEGA328P-XMINI",
+  "url": "https://www.microchip.com/en-us/development-tool/ATMEGA168PB-XMINI",
   "vendor": "Microchip"
 }

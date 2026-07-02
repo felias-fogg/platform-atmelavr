@@ -180,6 +180,7 @@ class AtmelavrPlatform(PlatformBase):
                     "end",
                     "define pio_reset_run_target",
                     "   monitor reset",
+                    "   monitor disconnect",
                     "   detach",
                     "end",
                     "target remote $DEBUG_PORT",

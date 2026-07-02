@@ -24,3 +24,5 @@
  - added "default" field to all debug tools
  - changed debug option handling: One now can overwrite tools fields in the board files
  - changed recognition that a mcu is pyavrocd debuggable: Now "pyavrocd_target" similar to simavr_target
+ - added xmini boards
+ - changed 'detach' in monitor_
