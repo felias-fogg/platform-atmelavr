@@ -12,6 +12,7 @@
   },
   "debug": {
     "simavr_target": "attiny13a",
+    "pyavrocd_target": "attiny13a",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny13a.svd"
   },
   "frameworks": [

@@ -25,6 +25,7 @@
     "variant": "R4"
   },
   "debug": {
+    "pyavrocd_target": "atmega328pb",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328pb.svd"
   },
   "frameworks": [

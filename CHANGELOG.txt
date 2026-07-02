@@ -18,3 +18,9 @@
 5.3.4
  - Fixed Problem in dw_disbale target
  - Fixed specification of pyavrocd version spec
+
+5.3.5
+ - replaced dummy.txt containing the word 'dummy' in misc/svd with empty file 'dummy' in order to fix the endless SVD file loading problem
+ - added "default" field to all debug tools
+ - changed debug option handling: One now can overwrite tools fields in the board files
+ - changed recognition that a mcu is pyavrocd debuggable: Now "pyavrocd_target" similar to simavr_target

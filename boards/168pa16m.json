@@ -8,6 +8,7 @@
   },
   "debug": {
     "simavr_target": "atmega168p",
+    "pyavrocd_target": "atmega168p",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega168p.svd"
   },
   "frameworks": [

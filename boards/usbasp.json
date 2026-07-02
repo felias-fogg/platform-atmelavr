@@ -8,7 +8,6 @@
   },
   "debug": {
     "simavr_target": "atmega8",
-    "pyavrocd": "nodebug",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega8.svd"
   },
   "frameworks": [

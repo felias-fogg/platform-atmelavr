@@ -22,6 +22,7 @@
   },
   "debug": {
     "simavr_target": "atmega2560",
+    "pyavrocd_target": "atmega2560",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega2560.svd",
     "avr-stub": {
       "speed": 115200

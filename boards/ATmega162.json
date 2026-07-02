@@ -12,6 +12,7 @@
     "uart1_pins": "uart1_rxb2_txb3"
   },
   "debug": {
+    "pyavrocd_target": "atmega162",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega162.svd"
   },
   "frameworks": [

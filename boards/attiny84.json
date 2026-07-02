@@ -16,6 +16,7 @@
   },
   "debug": {
     "simavr_target": "attiny84",
+    "pyavrocd_target": "attiny84",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny84.svd"
   },
   "frameworks": [

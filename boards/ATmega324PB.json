@@ -13,6 +13,7 @@
     "uart2_pins": "uart2_rxe2_txe3"
   },
   "debug": {
+    "pyavrocd_target": "atmega324pb",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega324pb.svd"
   },
   "frameworks": [

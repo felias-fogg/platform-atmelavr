@@ -6,6 +6,7 @@
     "mcu": "at90pwm216"
   },
   "debug": {
+    "pyavrocd_target": "at90pwm216",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90pwm216.svd"
   },
   "frameworks": [],

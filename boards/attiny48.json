@@ -15,6 +15,7 @@
     "speed": 38400
   },
   "debug": {
+    "pyavrocd_target": "attiny48",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny48.svd"
   },
   "frameworks": [

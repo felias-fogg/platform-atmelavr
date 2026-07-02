@@ -12,6 +12,7 @@
   },
   "debug": {
     "simavr_target": "atmega328",
+    "pyavrocd_target": "atmega328",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328.svd",
     "avr-stub": {
       "speed": 115200

@@ -119,7 +119,9 @@ class AtmelavrPlatform(PlatformBase):
             debug["tools"] = {}
 
         if debug.get("simavr_target", ""):
+            debug_simavr_board_options = debug["tools"].get("simavr", {})
             debug["tools"]["simavr"] = {
+                "default": True,
                 "init_cmds": [
                     "define pio_reset_halt_target",
                     "   monitor reset halt",
@@ -142,7 +144,10 @@ class AtmelavrPlatform(PlatformBase):
                     "executable": "bin/simavr"
                 }
             }
+            debug["tools"]["simavr"].update(debug_simavr_board_options)
+
         if debug.get("avr-stub", ""):
+            debug_avr_stub_board_options = debug["tools"].get("avr-stub", {})
             speed = debug["avr-stub"]["speed"]
             debug["tools"]["avr-stub"] = {
                 "init_cmds": [
@@ -162,9 +167,13 @@ class AtmelavrPlatform(PlatformBase):
                 "require_debug_port": True,
                 "default": False
             }
-        if not debug.get("pyavrocd", "") == "nodebug":
+            debug["tools"]["avr-stub"].update(debug_avr_stub_board_options)
+
+        if debug.get("pyavrocd_target", ""):
             debug_port_number = "50001"
+            debug_pyavrocd_board_options = debug["tools"].get("pyavrocd", {})
             debug["tools"]["pyavrocd"] = {
+                "default": False,
                 "init_cmds": [
                     "define pio_reset_halt_target",
                     "   monitor reset halt",
@@ -191,6 +200,7 @@ class AtmelavrPlatform(PlatformBase):
                     "executable": "pyavrocd"
                 }
             }
+            debug["tools"]["pyavrocd"].update(debug_pyavrocd_board_options)
       
         board.manifest["debug"] = debug
         return board

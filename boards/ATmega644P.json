@@ -13,6 +13,7 @@
   },
   "debug": {
     "simavr_target": "atmega644p",
+    "pyavrocd_target": "atmega644p",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega644p.svd"
   },
   "frameworks": [

@@ -14,6 +14,7 @@
     "uart3_pins": "uart3_rxj0_txj1"
   },
   "debug": {
+    "pyavrocd_target": "atmega640",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega640.svd"
   },
   "frameworks": [

@@ -12,6 +12,7 @@
     "uart1_pins": "uart1_rxb4_txb3"
   },
   "debug": {
+    "pyavrocd_target": "atmega328pb",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328pb.svd"
   },
   "frameworks": [

@@ -12,6 +12,7 @@
     "uart1_pins": "uart1_rxd2_txd3"
   },
   "debug": {
+    "pyavrocd_target": "atmega644",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega644.svd"
   },
   "frameworks": [

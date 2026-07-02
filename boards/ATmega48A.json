@@ -12,6 +12,7 @@
   },
   "debug": {
     "simavr_target": "atmega48",
+    "pyavrocd_target": "atmega48a",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega48a.svd"
   },
   "frameworks": [

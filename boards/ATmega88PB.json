@@ -11,6 +11,7 @@
     "uart0_pins": "uart0_rxd0_txd1"
   },
   "debug": {
+    "pyavrocd_target": "atmega88pb",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega88pb.svd"
   },
   "frameworks": [

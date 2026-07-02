@@ -13,6 +13,7 @@
   },
   "debug": {
     "simavr_target": "atmega1281",
+    "pyavrocd_target": "atmega1281",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega1281.svd"
   },
   "frameworks": [

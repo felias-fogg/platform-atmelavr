@@ -13,6 +13,7 @@
   },
   "debug": {
     "simavr_target": "atmega324a",
+    "pyavrocd_target": "atmega324a",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega324a.svd"
   },
   "frameworks": [

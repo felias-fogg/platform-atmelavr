@@ -26,6 +26,7 @@
     "unlock_bits": "0x3F"
   },
   "debug": {
+    "pyavrocd_target": "at90usb646",
     "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90usb646.svd"
   },
   "frameworks": [

@@ -9,9 +9,6 @@
   "hardware": {
     "oscillator": "internal"
   },
-  "debug": {
-    "pyavrocd": "nodebug"
-  },
   "frameworks": [
     "arduino"
   ],
