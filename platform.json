@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/felias-fogg/platform-atmelavr.git"
   },
-  "version": "5.3.5",
+  "version": "5.3.6",
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-avr",
@@ -29,7 +29,7 @@
     "toolchain-atmelavr": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "https://github.com/felias-fogg/avr-gcc-15/archive/refs/heads/dummy.zip"
+      "version": "https://github.com/felias-fogg/avr-gcc-7/archive/refs/heads/dummy.zip"
     },
     "tool-pyavrocd": {
       "type": "debugger",

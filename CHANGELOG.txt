@@ -25,4 +25,10 @@
  - changed debug option handling: One now can overwrite tools fields in the board files
  - changed recognition that a mcu is pyavrocd debuggable: Now "pyavrocd_target" similar to simavr_target
  - added xmini boards
- - changed 'detach' in monitor_
+ - added 'monitor disconnect' before 'detach' in
+   'pio_reset_run_target' so that the debugger can shot down before the
+   GDB server gets terminated
+
+5.3.6
+ - Switch back to toolchain 7.3.0 (added AVR-GDB and mainfests to
+   Spence Konde's version) 
