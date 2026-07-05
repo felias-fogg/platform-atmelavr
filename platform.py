@@ -34,7 +34,8 @@ class AtmelavrPlatform(PlatformBase):
         # Linux ARM64
         "linux_aarch64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-aarch64-pc-linux-gnu.tar.gz",
         # Mac (Intel only)
-        "darwin_x86_64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-x86_64-apple-darwin14.tar.gz"
+        "darwin_x86_64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-x86_64-apple-darwin14.tar.gz",
+        "darwin_arm64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-x86_64-apple-darwin14.tar.gz"
     }
 
     tool_pyavrocd = {
