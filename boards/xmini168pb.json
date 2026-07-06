@@ -12,28 +12,7 @@
   "debug": {
     "simavr_target": "atmega168pb",
     "pyavrocd_target": "atmega168pb",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega168pb.svd",
-    "tools": {
-      "pyavrocd": {
-        "init_cmds": [
-          "define pio_reset_halt_target",
-          "   monitor reset halt",
-          "end",
-          "define pio_reset_run_target",
-          "   monitor reset",
-          "   monitor disconnect",
-          "   detach",
-          "end",
-          "target remote $DEBUG_PORT",
-          "monitor debugwire enable",
-          "$INIT_BREAK",
-          "monitor atexit leave",
-          "monitor load noinit",
-          "load"
-        ],
-        "load_cmds": "preload" 
-      }
-    }
+    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega168pb.svd"
   },
   "frameworks": [
     "arduino"
