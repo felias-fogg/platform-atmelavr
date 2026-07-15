@@ -17,7 +17,7 @@
   "debug": {
     "simavr_target": "atmega1280",
     "pyavrocd_target": "atmega1280",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega1280.svd",
+    "svd_path": "atmega1280.svd",
     "avr-stub": {
       "speed": 115200
     }

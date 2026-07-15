@@ -7,7 +7,7 @@
   },
   "debug": {
     "pyavrocd_target": "at90pwm216",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90pwm216.svd"
+    "svd_path": "at90pwm216.svd"
   },
   "frameworks": [],
   "name": "Atmel AT90PWM216",

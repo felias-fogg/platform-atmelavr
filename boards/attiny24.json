@@ -17,7 +17,7 @@
   "debug": {
     "simavr_target": "attiny24",
     "pyavrocd_target": "attiny24",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny24.svd"
+    "svd_path": "attiny24.svd"
   },
   "frameworks": [
     "arduino"

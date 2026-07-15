@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega6450p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega6450p.svd"
+    "svd_path": "atmega6450p.svd"
   },
   "frameworks": [
     "arduino"

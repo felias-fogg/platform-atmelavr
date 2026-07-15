@@ -27,7 +27,7 @@
   },
   "debug": {
     "pyavrocd_target": "at90usb646",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90usb646.svd"
+    "svd_path": "at90usb646.svd"
   },
   "frameworks": [
     "arduino"

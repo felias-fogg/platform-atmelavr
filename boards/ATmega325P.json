@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega325p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega325p.svd"
+    "svd_path": "atmega325p.svd"
   },
   "frameworks": [
     "arduino"

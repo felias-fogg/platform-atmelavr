@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega88pb",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega88pb.svd"
+    "svd_path": "atmega88pb.svd"
   },
   "frameworks": [
     "arduino"

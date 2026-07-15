@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega329",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega329.svd"
+    "svd_path": "atmega329.svd"
   },
   "frameworks": [
     "arduino"

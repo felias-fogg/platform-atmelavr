@@ -14,7 +14,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega324pb",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega324pb.svd"
+    "svd_path": "atmega324pb.svd"
   },
   "frameworks": [
     "arduino"

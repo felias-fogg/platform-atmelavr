@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega6490p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega6490p.svd"
+    "svd_path": "atmega6490p.svd"
   },
   "frameworks": [
     "arduino"

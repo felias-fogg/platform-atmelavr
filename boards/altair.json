@@ -8,7 +8,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega256rfr2",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega256rfr2.svd"
+    "svd_path": "atmega256rfr2.svd"
   },
   "frameworks": [
     "arduino"

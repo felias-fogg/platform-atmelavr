@@ -15,7 +15,7 @@
   },
   "debug": {
     "pyavrocd_target": "attiny841",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny841.svd"
+    "svd_path": "attiny841.svd"
   },
   "frameworks": [
     "arduino"

@@ -12,7 +12,7 @@
   },
   "debug": {
     "simavr_target": "atmega88",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega88.svd"
+    "svd_path": "atmega88.svd"
   },
   "frameworks": [
     "arduino"

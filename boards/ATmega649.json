@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega649",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega649.svd"
+    "svd_path": "atmega649.svd"
   },
   "frameworks": [
     "arduino"

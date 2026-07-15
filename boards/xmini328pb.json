@@ -12,7 +12,7 @@
   "debug": {
     "simavr_target": "atmega328pb",
     "pyavrocd_target": "atmega328pb",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega328pb.svd"
+    "svd_path": "atmega328pb.svd"
   },
   "frameworks": [
     "arduino"

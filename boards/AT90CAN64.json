@@ -13,7 +13,7 @@
   },
   "debug": {
     "pyavrocd_target": "at90can64",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/at90can64.svd"
+    "svd_path": "at90can64.svd"
   },
   "frameworks": [
     "arduino"

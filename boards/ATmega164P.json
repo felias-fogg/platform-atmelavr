@@ -14,7 +14,7 @@
   "debug": {
     "simavr_target": "atmega164p",
     "pyavrocd_target": "atmega164p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega164p.svd"
+    "svd_path": "atmega164p.svd"
   },
   "frameworks": [
     "arduino"

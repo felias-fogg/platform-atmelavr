@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega645p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega645p.svd"
+    "svd_path": "atmega645p.svd"
   },
   "frameworks": [
     "arduino"

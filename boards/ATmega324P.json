@@ -14,7 +14,7 @@
   "debug": {
     "simavr_target": "atmega324p",
     "pyavrocd_target": "atmega324p",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega324p.svd"
+    "svd_path": "atmega324p.svd"
   },
   "frameworks": [
     "arduino"

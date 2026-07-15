@@ -14,7 +14,7 @@
   "debug": {
     "simavr_target": "atmega128",
     "pyavrocd_target": "atmega128",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega128.svd"
+    "svd_path": "atmega128.svd"
   },
   "frameworks": [
     "arduino"

@@ -16,7 +16,7 @@
   "debug": {
     "simavr_target": "attiny4313",
     "pyavrocd_target": "attiny4313",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/attiny4313.svd"
+    "svd_path": "attiny4313.svd"
   },
   "frameworks": [
     "arduino"

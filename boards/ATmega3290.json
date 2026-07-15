@@ -12,7 +12,7 @@
   },
   "debug": {
     "pyavrocd_target": "atmega3290",
-    "svd_path": "../../../../packages/tool-pyavrocd/pyavrocd-util/svd/atmega3290.svd"
+    "svd_path": "atmega3290.svd"
   },
   "frameworks": [
     "arduino"

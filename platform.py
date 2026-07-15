@@ -145,6 +145,7 @@ class AtmelavrPlatform(PlatformBase):
                         "-m", debug["simavr_target"],
                         "-f", build.get("f_cpu", "")
                     ],
+                    "regex": "listening on port \\d+",
                     "executable": "bin/simavr"
                 }
             }
@@ -174,7 +175,7 @@ class AtmelavrPlatform(PlatformBase):
             debug["tools"]["avr-stub"].update(debug_avr_stub_board_options)
 
         if debug.get("pyavrocd_target", ""):
-            debug_port_number = "50001"
+            debug_port_number = "40044"
             debug_pyavrocd_board_options = debug["tools"].get("pyavrocd", {})
             debug["tools"]["pyavrocd"] = {
                 "default": False,
@@ -196,13 +197,16 @@ class AtmelavrPlatform(PlatformBase):
                 "server": {
                     "package": "tool-pyavrocd",
                     "arguments": [
+                        "-s", "nop",
                         "-p", debug_port_number,
                         "-m", "all",
                         "-d", build.get("mcu", ""),
                         "-F", build.get("f_cpu", ""),
                         "-P", "2000"
                     ],
-                    "executable": "pyavrocd"
+                    "executable": "pyavrocd",
+                    "regex": "Listening on port \\d+ for gdb connection",
+
                 }
             }
             debug["tools"]["pyavrocd"].update(debug_pyavrocd_board_options)
