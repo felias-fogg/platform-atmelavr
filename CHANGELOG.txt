@@ -36,3 +36,8 @@
 5.3.7
  - Placed SVD files into their 'default' location misc/svd/ and
    changed all board manifests accordingly
+
+5.3.8
+ - Made pyavrocd a mandatory package
+ - Set GDB in builder/main.py to avr-gdb in pyacrocd package
+ - Using again standard AVR-GCC toolchain 3.70300.220127

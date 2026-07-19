@@ -18,25 +18,9 @@ import sys
 
 class AtmelavrPlatform(PlatformBase):
 
-    tc_prefix = "https://github.com/felias-fogg/avr-gcc-7/releases/download/"
-    tc_version = "avr-gcc-7.3.0-atmel3.6.1"
-    pio_version = "v3.070300.260704"
-
     pya_version = "1.5.4"
     pya_prefix = "https://github.com/felias-fogg/pyavrocd/releases/download/v"
     pya_infix = "/avrocd-tools-"
-
-    toolchain_atmelavr = {
-        # Windows
-        "windows_x86": tc_prefix + pio_version + "/" + tc_version + "-azduino8a-i686-w64-mingw32.zip",
-        # Linux Intel
-        "linux_x86_64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-x86_64-pc-linux-gnu.tar.gz",
-        # Linux ARM64
-        "linux_aarch64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-aarch64-pc-linux-gnu.tar.gz",
-        # Mac (Intel only)
-        "darwin_x86_64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-x86_64-apple-darwin14.tar.gz",
-        "darwin_arm64": tc_prefix + pio_version + "/" + tc_version + "-azduino8-x86_64-apple-darwin14.tar.gz"
-    }
 
     tool_pyavrocd = {
         # Windows
@@ -59,9 +43,6 @@ class AtmelavrPlatform(PlatformBase):
                 "build.core", "arduino"))
 
         sys_type = util.get_systype()
-        toolchain_pkg = "toolchain-atmelavr"
-        if toolchain_pkg in self.packages:
-            self.packages[toolchain_pkg]["version"] = AtmelavrPlatform.toolchain_atmelavr[sys_type]
         pyavrocd_pkg = "tool-pyavrocd"
         if pyavrocd_pkg in self.packages:
             self.packages[pyavrocd_pkg]["version"] = AtmelavrPlatform.tool_pyavrocd[sys_type]        

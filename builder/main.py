@@ -94,7 +94,7 @@ env.Replace(
     AR="avr-gcc-ar",
     AS="avr-as",
     CC="avr-gcc",
-    GDB="avr-gdb",
+    GDB=join(env.get("PROJECT_PACKAGES_DIR", ""), "tool-pyavrocd", "avr-gdb"),
     CXX="avr-g++",
     OBJCOPY="avr-objcopy",
     RANLIB="avr-gcc-ranlib",
