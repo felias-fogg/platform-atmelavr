@@ -18,7 +18,7 @@ import sys
 
 class AtmelavrPlatform(PlatformBase):
 
-    pya_version = "1.5.4"
+    pya_version = "1.5.5"
     pya_prefix = "https://github.com/felias-fogg/pyavrocd/releases/download/v"
     pya_infix = "/avrocd-tools-"
 
@@ -104,7 +104,6 @@ class AtmelavrPlatform(PlatformBase):
             debug["tools"] = {}
 
         if debug.get("simavr_target", ""):
-            debug_simavr_board_options = debug["tools"].get("simavr", {})
             debug["tools"]["simavr"] = {
                 "default": True,
                 "init_cmds": [
@@ -126,14 +125,11 @@ class AtmelavrPlatform(PlatformBase):
                         "-m", debug["simavr_target"],
                         "-f", build.get("f_cpu", "")
                     ],
-                    "regex": "listening on port \\d+",
                     "executable": "bin/simavr"
                 }
             }
-            debug["tools"]["simavr"].update(debug_simavr_board_options)
 
         if debug.get("avr-stub", ""):
-            debug_avr_stub_board_options = debug["tools"].get("avr-stub", {})
             speed = debug["avr-stub"]["speed"]
             debug["tools"]["avr-stub"] = {
                 "init_cmds": [
@@ -153,11 +149,9 @@ class AtmelavrPlatform(PlatformBase):
                 "require_debug_port": True,
                 "default": False
             }
-            debug["tools"]["avr-stub"].update(debug_avr_stub_board_options)
 
         if debug.get("pyavrocd_target", ""):
             debug_port_number = "40044"
-            debug_pyavrocd_board_options = debug["tools"].get("pyavrocd", {})
             debug["tools"]["pyavrocd"] = {
                 "default": False,
                 "init_cmds": [
@@ -185,12 +179,9 @@ class AtmelavrPlatform(PlatformBase):
                         "-F", build.get("f_cpu", ""),
                         "-P", "2000"
                     ],
-                    "executable": "pyavrocd",
-                    "regex": "Listening on port \\d+ for gdb connection",
-
+                    "executable": "pyavrocd"
                 }
             }
-            debug["tools"]["pyavrocd"].update(debug_pyavrocd_board_options)
       
         board.manifest["debug"] = debug
         return board
