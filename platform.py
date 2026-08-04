@@ -18,20 +18,24 @@ import sys
 
 class AtmelavrPlatform(PlatformBase):
 
-    pya_version = "1.5.5"
+    pya_version = "1.5.7a1"
     pya_prefix = "https://github.com/felias-fogg/pyavrocd/releases/download/v"
     pya_infix = "/avrocd-tools-"
+    tool_prefix = pya_prefix + pya_version + pya_infix + pya_version
 
     tool_pyavrocd = {
-        # Windows
-        "windows_amd64": pya_prefix + pya_version + pya_infix + pya_version + "-x86_64-mingw32.tar.gz",
+        # Windows Intel
+        "windows_amd64": tool_prefix + "-x86_64-mingw32.tar.gz",
+        "windows_x86":   tool_prefix + "-i686-mingw32.tar.gz",
         # Linux Intel
-        "linux_x86_64": pya_prefix + pya_version + pya_infix + pya_version + "-x86_64-linux-gnu.tar.gz",
+        "linux_x86_64":  tool_prefix + "-x86_64-linux-gnu.tar.gz",
+        "linux_i686":    tool_prefix + "-i686-linux-gnu",
         # Linux Arm
-        "linux_arm64":  pya_prefix + pya_version + pya_infix + pya_version + "-aarch64-linux-gnu.tar.gz",
-        # Mac (Intel and ARM are separate)
-        "darwin_x86_64": pya_prefix + pya_version + pya_infix + pya_version + "-x86_64-apple-darwin.tar.gz",
-        "darwin_arm64": pya_prefix + pya_version + pya_infix + pya_version + "-arm64-apple-darwin.tar.gz"
+        "linux_arm64":  tool_prefix + "-aarch64-linux-gnu.tar.gz",
+        "linux_armv6l": tool_prefix + "-arm-linux-gnueabihf"
+        # Mac 
+        "darwin_x86_64": tool_prefix + "-x86_64-apple-darwin.tar.gz",
+        "darwin_arm64": tool_prefix + "-arm64-apple-darwin.tar.gz"
     }
 
     def configure_default_packages(self, variables, targets):
