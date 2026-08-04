@@ -32,7 +32,7 @@ class AtmelavrPlatform(PlatformBase):
         "linux_i686":    tool_prefix + "-i686-linux-gnu",
         # Linux Arm
         "linux_arm64":  tool_prefix + "-aarch64-linux-gnu.tar.gz",
-        "linux_armv6l": tool_prefix + "-arm-linux-gnueabihf"
+        "linux_armv6l": tool_prefix + "-arm-linux-gnueabihf",
         # Mac 
         "darwin_x86_64": tool_prefix + "-x86_64-apple-darwin.tar.gz",
         "darwin_arm64": tool_prefix + "-arm64-apple-darwin.tar.gz"
