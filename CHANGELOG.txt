@@ -44,3 +44,6 @@
    - This solves also a bad code generation problem in connection with ATmega324PB
  - Removing the update possibility of the debug entry again (not used)
  - Removing regex again (will now be done in the cortex-debug-hack)
+
+5.3.9
+ - Changed PyAcrOCD version to 1.7.0

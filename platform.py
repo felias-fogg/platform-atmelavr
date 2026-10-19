@@ -18,7 +18,7 @@ import sys
 
 class AtmelavrPlatform(PlatformBase):
 
-    pya_version = "1.5.7a1"
+    pya_version = "1.7.0"
     pya_prefix = "https://github.com/felias-fogg/pyavrocd/releases/download/v"
     pya_infix = "/avrocd-tools-"
     tool_prefix = pya_prefix + pya_version + pya_infix + pya_version
